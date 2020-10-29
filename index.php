@@ -37,7 +37,7 @@
 		 	if (isset($_GET['date'])) {
 		 
 		 	$date=$_GET['date'];
-		 	$json=file_get_contents('https://api.nasa.gov/planetary/apod?hd=true&date='.$date.'&api_key=EHZbR4a10KClhG0Qbz1r10k8fIMqo5DDuzG8hBHN');
+		 	$json=file_get_contents('https://api.nasa.gov/planetary/apod?hd=true&date='.$date.'&api_key=your_api_key');
 		 	$results=json_decode($json,TRUE);
 
 		 	echo "  
@@ -71,7 +71,7 @@
 <div class="container mt-5">
 <div class="row mb-5">
 <div class="col-md-4 mx-auto">
-<a href="../index.html" class="btn btn-warning btn-block">inici</a>
+<!-- <a href="../index.html" class="btn btn-warning btn-block">inici</a> -->
 </div>
 </div>
 </div>
